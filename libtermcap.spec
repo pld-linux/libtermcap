@@ -50,21 +50,21 @@ This is the package containing the development libaries and header
 files for writing programs that access the termcap database. It may be
 necessary to build some other packages as well.
 
-%description -l pl devel
+%description devel -l pl
 Pakiet ten zawiera biblioteki i pliki nag³ówkowe dla programistów.
 
-%description -l de devel
+%description devel -l de
 Dies ist ein Paket mit Entwicklungs-Libraries und Header-Dateien zum
 Schreiben von Programmen, die auf die termcap-Datenbank zugreifen.
 Eventuell müssen noch ein paar andere Pakete gebaut werden.
 
-%description -l fr devel
+%description devel -l fr
 Ceci est le package contenant les bibliothéques de développement et
 les fichiers d'en-tête pour écrire des programmes accédant à la base
 de données termcap. Cela peut être nécessaire pour construire certains
 autres packages.
 
-%description -l tr devel
+%description devel -l tr
 Bu paket, termcap veri tabanýný kullanan programlar geliþtirmek için
 gereken baþlýk dosyalarý ve kitaplýklarý içerir.
 
@@ -77,7 +77,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 Static termcap library.
 
-%description -l pl static
+%description static -l pl
 Statyczna biblioteka temcap.
 
 %prep
