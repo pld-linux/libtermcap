@@ -113,8 +113,6 @@ install termcap.info* $RPM_BUILD_ROOT%{_infodir}
 
 ln -sf ../../lib/libtermcap.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libtermcap.so
 
-gzip -9nf README ChangeLog
-
 %post	-p /sbin/ldconfig
 %postun	-p /sbin/ldconfig
 
@@ -133,7 +131,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ChangeLog
 %attr(755,root,root) %{_libdir}/*.so
 %{_includedir}/*.h
 %{_infodir}/*
