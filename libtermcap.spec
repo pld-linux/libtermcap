@@ -76,7 +76,7 @@ baþlýk dosyalarý ve kitaplýklarý içerir.
 %patch1 -p1
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS -I." 
+%{__make} CFLAGS="$RPM_OPT_FLAGS -I." 
 
 %install
 rm -rf $RPM_BUILD_ROOT
