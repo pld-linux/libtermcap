@@ -109,36 +109,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*.h
 
 %attr(755,root,root) %{_libdir}/*.so
-
-%changelog
-* Sun Mar 14 1999 Micha³ Kuratczyk <kura@pld.org.pl>
-  [2.0.8-2]
-- added gzipping documentation
-- cosmetic changes
-
-* Sun Feb 28 1999 Piotr Czerwiñski <pius@ceti.com.pl>
-- fixed CFLAGS definition,
-- added Polish group description,
-- cosmetic changes.
-
-* Sun Jul 19 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-[2.0.8-1d]
-- build for PLD Tornado,
-- translation modified for pl,
-- build from non root's account.
-- major changes.
-
-* Tue Jun 30 1998 Alan Cox <alan@redhat.com>
-- But assume system termcap is sane. Also handle setfsuid return right.
-
-* Tue Jun 30 1998 Alan Cox <alan@redhat.com>
-- TERMCAP environment hole for setuid apps squished.
-
-* Thu May 07 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Tue Oct 14 1997 Donnie Barnes <djb@redhat.com>
-- spec file cleanups
-
-* Tue Jun 03 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
