@@ -9,6 +9,7 @@ Release:	3
 Group:		Libraries
 License:	LGPL
 Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
+# Source0-md5:	b9256cccfd4ddf725e20bf100f8c001a
 Patch0:		%{name}-setuid.patch
 Patch1:		%{name}-glibc21.patch
 Patch2:		%{name}-xref.patch
