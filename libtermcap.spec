@@ -1,111 +1,153 @@
-Summary:     library for accessing the termcap database
-Summary(de): Library zum Zugriff auf die termcap-Datenbank
-Summary(fr): Librairie pour accéder à la base de données termcap.
-Summary(pl): Biblioteki dostêpu do bazy danych termcap
-Summary(tr): termcap veri tabanýna eriþim kitaplýðý
-Name:        libtermcap
-Version:     2.0.8
-Release:     2
-Group:       Libraries
-Group(pl):   Biblioteki
-Copyright:   LGPL
-Source:      ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
-Patch0:      termcap-%{version}-shared.patch
-Patch1:      termcap-%{version}-setuid.patch
-Requires:    /etc/termcap
+Summary:	library for accessing the termcap database
+Summary(de):	Library zum Zugriff auf die termcap-Datenbank
+Summary(fr):	Librairie pour accéder à la base de données termcap
+Summary(pl):	Biblioteki dostêpu do bazy danych termcap
+Summary(tr):	termcap veri tabanýna eriþim kitaplýðý
+Name:		libtermcap
+Version:	2.0.8
+Release:	2
+Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+License:	LGPL
+Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
+Patch0:		%{name}-setuid.patch
+Patch1:		%{name}-glibc21.patch
+Patch2:		%{name}-xref.patch
+Patch3:		%{name}-fix-tc.patch
+Patch4:		%{name}-ignore-p.patch
+Patch5:		%{name}-bufsize.patch
+Patch6:		%{name}-colon.patch
+Patch7:		%{name}-buffer.patch
+Patch8:		%{name}-aaargh.patch
+Requires:	/etc/termcap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is the library for accessing the termcap database.  It is necessary
-to be installed for a system to be able to do much of anything.  
+This is the library for accessing the termcap database.
 
 %description -l pl
-Biblioteki dostêpu do bazy danych termcap'a. Pakiet ten jest wykorzystywany
-przez wiele aplikacji i niezbêdny dla systemu.
+Biblioteki dostêpu do bazy danych termcap.
 
 %description -l de
-Dies ist die Library zum Zugriff auf die termcap-Datenbank. Sie muß
-installiert werden, damit das System funktionsfähig ist.
+Dies ist die Library zum Zugriff auf die termcap-Datenbank.
 
 %description -l fr
-Bibliothèque pour accéder à la base de données termcap. Nécessaire pour
-qu'un système puisse faire quelque chose.
+Bibliothèque pour accéder à la base de données termcap.
 
 %description -l tr
-Bu paket termcap veri tabanýna ulaþým kitaplýðýný içerir. Sistem üzerinde
-pek çok þeyi yapabilmek için kurulu olmasý gerekmektedir.
+Bu paket termcap veri tabanýna ulaþým kitaplýðýný içerir.
 
 %package devel
-Summary:     development libraries and header files for termcap library
-Summary(de): Entwicklungs-Libraries und Header-Dateien für die termcap-Library
-Summary(fr): Librairies de développement et fichiers d'en-tête pour la termcap.
-Summary(pl): Biblioteki i pliki nag³ówkowe dla termcap
-Summary(tr): termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
-Group:       Libraries
-Group(pl):   Biblioteki
-Requires:    %{name} = %{version}
+Summary:	Development libraries and header files for termcap library
+Summary(de):	Entwicklungs-Libraries und Header-Dateien für die termcap-Library
+Summary(fr):	Librairies de développement et fichiers d'en-tête pour la termcap.
+Summary(pl):	Biblioteki i pliki nag³ówkowe dla termcap
+Summary(tr):	termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
+Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
+Requires:	%{name} = %{version}
 
 %description devel
 This is the package containing the development libaries and header
-files for writing programs that access the termcap database.  It may
-be necessary to build some other packages as well.
+files for writing programs that access the termcap database. It may be
+necessary to build some other packages as well.
 
 %description -l pl devel
-Pakiet ten zawiera biblioteki i pliki nag³ówkowe dla programistów,
-niezbêdne równie¿ do przebudowy wielu pakietów ¼ród³owych.
+Pakiet ten zawiera biblioteki i pliki nag³ówkowe dla programistów.
 
 %description -l de devel
-Dies ist ein Paket mit Entwicklungs-Libraries und Header-Dateien
-zum Schreiben von Programmen, die auf die termcap-Datenbank
-zugreifen. Eventuell müssen noch ein paar andere Pakete gebaut
-werden.
+Dies ist ein Paket mit Entwicklungs-Libraries und Header-Dateien zum
+Schreiben von Programmen, die auf die termcap-Datenbank zugreifen.
+Eventuell müssen noch ein paar andere Pakete gebaut werden.
 
 %description -l fr devel
 Ceci est le package contenant les bibliothéques de développement et
-les fichiers d'en-tête pour écrire des programmes accédant à la base 
+les fichiers d'en-tête pour écrire des programmes accédant à la base
 de données termcap. Cela peut être nécessaire pour construire certains
 autres packages.
 
 %description -l tr devel
-Bu paket, termcap veri tabanýný kullanan programlar geliþtirmek için gereken
-baþlýk dosyalarý ve kitaplýklarý içerir.
+Bu paket, termcap veri tabanýný kullanan programlar geliþtirmek için
+gereken baþlýk dosyalarý ve kitaplýklarý içerir.
+
+%package static
+Summary:	Static termcap library
+Summary(pl):	Statyczna Biblioteka termcap
+Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
+Requires:	%{name} = %{version}
+
+%description static
+Static termcap library.
+
+%description -l pl static
+Statyczna biblioteka temcap.
 
 %prep
 %setup -q -n termcap-%{version}
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
+%patch4 -p1
+%patch5 -p1
+%patch6 -p1
+%patch7 -p1
+%patch8 -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS -I." 
+cat > config.h <<EOF
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+EOF
+
+%{__make} CFLAGS="%{rpmcflags} -DHAVE_CONFIG_H -I."
+%{__make} info
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{lib,usr/{lib,include}}
+install -d $RPM_BUILD_ROOT{/lib,%{_libdir},%{_includedir},%{_infodir}}
 
 install *.so.* $RPM_BUILD_ROOT/lib
 install libtermcap.a $RPM_BUILD_ROOT%{_libdir}/libtermcap.a
 install termcap.h $RPM_BUILD_ROOT%{_includedir}/termcap.h
+install termcap.info* $RPM_BUILD_ROOT%{_infodir}
 
-ln -sf libtermcap.so.%{version} $RPM_BUILD_ROOT/lib/libtermcap.so.2
 ln -sf ../../lib/libtermcap.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libtermcap.so
 
 gzip -9nf README ChangeLog
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
+
+%post devel
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+
+%postun devel
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(755,root,root,755)
-/lib/*.so.*
+%defattr(644,root,root,755)
+%attr(755,root,root) /lib/*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%doc {README,ChangeLog}.gz
-
-%{_libdir}/*.a
-%{_includedir}/*.h
-
+%doc *.gz
 %attr(755,root,root) %{_libdir}/*.so
+%{_includedir}/*.h
+%{_infodir}/*
+
+%files static
+%defattr(644,root,root,755)
+%{_libdir}/*.a
