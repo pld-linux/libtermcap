@@ -83,11 +83,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/{lib,usr/{lib,include}}
 
 install *.so.* $RPM_BUILD_ROOT/lib
-install libtermcap.a $RPM_BUILD_ROOT/usr/lib/libtermcap.a
+install libtermcap.a $RPM_BUILD_ROOT%{_libdir}/libtermcap.a
 install termcap.h $RPM_BUILD_ROOT/usr/include/termcap.h
 
 ln -sf libtermcap.so.%{version} $RPM_BUILD_ROOT/lib/libtermcap.so.2
-ln -sf ../../lib/libtermcap.so.%{version} $RPM_BUILD_ROOT/usr/lib/libtermcap.so
+ln -sf ../../lib/libtermcap.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libtermcap.so
 
 gzip -9nf README ChangeLog
 
@@ -105,10 +105,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,ChangeLog}.gz
 
-/usr/lib/*.a
+%{_libdir}/*.a
 /usr/include/*.h
 
-%attr(755,root,root) /usr/lib/*.so
+%attr(755,root,root) %{_libdir}/*.so
 
 %changelog
 * Sun Mar 14 1999 Micha³ Kuratczyk <kura@pld.org.pl>
