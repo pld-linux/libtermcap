@@ -7,7 +7,7 @@ Summary(pt_BR):	Biblioteca para acessar a base de dados termcap
 Summary(tr):	termcap veri tabanýna eriþim kitaplýðý
 Name:		libtermcap
 Version:	2.0.8
-Release:	3
+Release:	4
 Group:		Libraries
 License:	LGPL
 Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
