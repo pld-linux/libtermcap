@@ -13,7 +13,7 @@ Source:      ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
 Patch0:      termcap-%{version}-shared.patch
 Patch1:      termcap-%{version}-setuid.patch
 Requires:    /etc/termcap
-Buildroot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This is the library for accessing the termcap database.  It is necessary
