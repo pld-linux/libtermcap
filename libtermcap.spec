@@ -5,7 +5,7 @@ Summary(pl):	Biblioteki dostêpu do bazy danych termcap
 Summary(tr):	termcap veri tabanýna eriþim kitaplýðý
 Name:		libtermcap
 Version:	2.0.8
-Release:	2
+Release:	3
 Group:		Libraries
 Group(de):	Libraries
 Group(es):	Bibliotecas
@@ -82,7 +82,7 @@ Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
-Requires:	%{name} = %{version}
+Requires:	%{name}-devel = %{version}
 
 %description static
 Static termcap library.
