@@ -104,7 +104,7 @@ Requires:	%{name}-devel = %{version}
 Static termcap library.
 
 %description static -l pl
-Statyczna biblioteka temcap.
+Statyczna biblioteka termcap.
 
 %description static -l pt_BR
 Bibliotecas estáticas para desenvolvimento com termcap
