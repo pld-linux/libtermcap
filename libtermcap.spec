@@ -84,7 +84,7 @@ install -d $RPM_BUILD_ROOT/{lib,usr/{lib,include}}
 
 install *.so.* $RPM_BUILD_ROOT/lib
 install libtermcap.a $RPM_BUILD_ROOT%{_libdir}/libtermcap.a
-install termcap.h $RPM_BUILD_ROOT/usr/include/termcap.h
+install termcap.h $RPM_BUILD_ROOT%{_includedir}/termcap.h
 
 ln -sf libtermcap.so.%{version} $RPM_BUILD_ROOT/lib/libtermcap.so.2
 ln -sf ../../lib/libtermcap.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libtermcap.so
@@ -106,7 +106,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc {README,ChangeLog}.gz
 
 %{_libdir}/*.a
-/usr/include/*.h
+%{_includedir}/*.h
 
 %attr(755,root,root) %{_libdir}/*.so
 
