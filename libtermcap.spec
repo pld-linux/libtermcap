@@ -55,6 +55,9 @@ Summary(pt_BR):	Biblioteca para desenvolvimento e arquivos de inclusão para bibl
 Summary(tr):	termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
+%if "%{_includedir}" == "/usr/include"
+Conflicts:	ncurses-devel
+%endif
 
 %description devel
 This is the package containing the development libaries and header
