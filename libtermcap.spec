@@ -1,4 +1,4 @@
-Summary:	library for accessing the termcap database
+Summary:	Library for accessing the termcap database
 Summary(de):	Library zum Zugriff auf die termcap-Datenbank
 Summary(es):	Biblioteca para acceder a base de datos termcap
 Summary(fr):	Librairie pour accéder à la base de données termcap
