@@ -39,7 +39,7 @@ Bu paket termcap veri tabanýna ulaþým kitaplýðýný içerir.
 %package devel
 Summary:	Development libraries and header files for termcap library
 Summary(de):	Entwicklungs-Libraries und Header-Dateien für die termcap-Library
-Summary(fr):	Librairies de développement et fichiers d'en-tête pour la termcap.
+Summary(fr):	Librairies de développement et fichiers d'en-tête pour la termcap
 Summary(pl):	Biblioteki i pliki nag³ówkowe dla termcap
 Summary(tr):	termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
 Group:		Development/Libraries
