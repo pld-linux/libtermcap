@@ -7,13 +7,6 @@ Name:		libtermcap
 Version:	2.0.8
 Release:	3
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 License:	LGPL
 Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
 Patch0:		%{name}-setuid.patch
@@ -50,13 +43,6 @@ Summary(fr):	Librairies de dИveloppement et fichiers d'en-tЙte pour la termcap.
 Summary(pl):	Biblioteki i pliki nagЁСwkowe dla termcap
 Summary(tr):	termcap kitaplЩПЩnЩ kullanan geliЧtirmek iГin gerekli dosyalar
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -86,13 +72,6 @@ gereken baЧlЩk dosyalarЩ ve kitaplЩklarЩ iГerir.
 Summary:	Static termcap library
 Summary(pl):	Statyczna Biblioteka termcap
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
