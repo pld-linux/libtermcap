@@ -22,6 +22,7 @@ Patch6:		%{name}-colon.patch
 Patch7:		%{name}-buffer.patch
 Patch8:		%{name}-aaargh.patch
 Requires:	/etc/termcap
+BuildRequires:  texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
