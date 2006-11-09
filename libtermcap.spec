@@ -8,8 +8,8 @@ Summary(tr):	termcap veri tabanýna eriþim kitaplýðý
 Name:		libtermcap
 Version:	2.0.8
 Release:	4
-Group:		Libraries
 License:	LGPL
+Group:		Libraries
 Source0:	ftp://sunsite.unc.edu/pub/Linux/GCC/termcap-%{version}.tar.gz
 # Source0-md5:	b9256cccfd4ddf725e20bf100f8c001a
 Patch0:		%{name}-setuid.patch
@@ -55,7 +55,7 @@ Summary(pl):	Biblioteki i pliki nag³ówkowe dla termcap
 Summary(pt_BR):	Biblioteca para desenvolvimento e arquivos de inclusão para biblioteca termcap
 Summary(tr):	termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 %if "%{_includedir}" == "/usr/include"
 Conflicts:	ncurses-devel
 %endif
@@ -75,9 +75,8 @@ Eventuell müssen noch ein paar andere Pakete gebaut werden.
 
 %description devel -l es
 Este es el paquete que contiene las bibliotecas y archivos de
-inclusión para la escritura de programas que acceden al banco de
-datos termcap.  Puede ser necesario también para construir otros
-paquetes.
+inclusión para la escritura de programas que acceden al banco de datos
+termcap. Puede ser necesario también para construir otros paquetes.
 
 %description devel -l fr
 Ceci est le package contenant les bibliothéques de développement et
@@ -86,9 +85,9 @@ de données termcap. Cela peut être nécessaire pour construire certains
 autres packages.
 
 %description devel -l pt_BR
-Este é o pacote que contém as bibliotecas e arquivos de inclusão
-para a escrita de programas que acessam o banco de dados termcap. Ele
-pode ser necessário para construir outros pacotes também.
+Este é o pacote que contém as bibliotecas e arquivos de inclusão para
+a escrita de programas que acessam o banco de dados termcap. Ele pode
+ser necessário para construir outros pacotes também.
 
 %description devel -l tr
 Bu paket, termcap veri tabanýný kullanan programlar geliþtirmek için
@@ -99,7 +98,7 @@ Summary:	Static termcap library
 Summary(pl):	Statyczna Biblioteka termcap
 Summary(pt_BR):	Bibliotecas estáticas para desenvolvimento com termcap
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static termcap library.
