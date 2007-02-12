@@ -1,10 +1,10 @@
 Summary:	Library for accessing the termcap database
-Summary(de):	Library zum Zugriff auf die termcap-Datenbank
-Summary(es):	Biblioteca para acceder a base de datos termcap
-Summary(fr):	Librairie pour accéder à la base de données termcap
-Summary(pl):	Biblioteki dostêpu do bazy danych termcap
-Summary(pt_BR):	Biblioteca para acessar a base de dados termcap
-Summary(tr):	termcap veri tabanýna eriþim kitaplýðý
+Summary(de.UTF-8):   Library zum Zugriff auf die termcap-Datenbank
+Summary(es.UTF-8):   Biblioteca para acceder a base de datos termcap
+Summary(fr.UTF-8):   Librairie pour accÃ©der Ã  la base de donnÃ©es termcap
+Summary(pl.UTF-8):   Biblioteki dostÄ™pu do bazy danych termcap
+Summary(pt_BR.UTF-8):   Biblioteca para acessar a base de dados termcap
+Summary(tr.UTF-8):   termcap veri tabanÄ±na eriÅŸim kitaplÄ±ÄŸÄ±
 Name:		libtermcap
 Version:	2.0.8
 Release:	4
@@ -28,32 +28,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is the library for accessing the termcap database.
 
-%description -l de
+%description -l de.UTF-8
 Dies ist die Library zum Zugriff auf die termcap-Datenbank.
 
-%description -l es
+%description -l es.UTF-8
 Esta es la biblioteca para acceso al banco de datos termcap.
 
-%description -l fr
-Bibliothèque pour accéder à la base de données termcap.
+%description -l fr.UTF-8
+BibliothÃ¨que pour accÃ©der Ã  la base de donnÃ©es termcap.
 
-%description -l pl
-Biblioteki dostêpu do bazy danych termcap.
+%description -l pl.UTF-8
+Biblioteki dostÄ™pu do bazy danych termcap.
 
-%description -l pt_BR
-Esta é a biblioteca para acesso ao banco de dados termcap.
+%description -l pt_BR.UTF-8
+Esta Ã© a biblioteca para acesso ao banco de dados termcap.
 
-%description -l tr
-Bu paket termcap veri tabanýna ulaþým kitaplýðýný içerir.
+%description -l tr.UTF-8
+Bu paket termcap veri tabanÄ±na ulaÅŸÄ±m kitaplÄ±ÄŸÄ±nÄ± iÃ§erir.
 
 %package devel
 Summary:	Development libraries and header files for termcap library
-Summary(de):	Entwicklungs-Libraries und Header-Dateien für die termcap-Library
-Summary(es):	Biblioteca para desarrollo y archivos de inclusión para biblioteca
-Summary(fr):	Librairies de développement et fichiers d'en-tête pour la termcap
-Summary(pl):	Biblioteki i pliki nag³ówkowe dla termcap
-Summary(pt_BR):	Biblioteca para desenvolvimento e arquivos de inclusão para biblioteca termcap
-Summary(tr):	termcap kitaplýðýný kullanan geliþtirmek için gerekli dosyalar
+Summary(de.UTF-8):   Entwicklungs-Libraries und Header-Dateien fÃ¼r die termcap-Library
+Summary(es.UTF-8):   Biblioteca para desarrollo y archivos de inclusiÃ³n para biblioteca
+Summary(fr.UTF-8):   Librairies de dÃ©veloppement et fichiers d'en-tÃªte pour la termcap
+Summary(pl.UTF-8):   Biblioteki i pliki nagÅ‚Ã³wkowe dla termcap
+Summary(pt_BR.UTF-8):   Biblioteca para desenvolvimento e arquivos de inclusÃ£o para biblioteca termcap
+Summary(tr.UTF-8):   termcap kitaplÄ±ÄŸÄ±nÄ± kullanan geliÅŸtirmek iÃ§in gerekli dosyalar
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %if "%{_includedir}" == "/usr/include"
@@ -65,49 +65,49 @@ This is the package containing the development libaries and header
 files for writing programs that access the termcap database. It may be
 necessary to build some other packages as well.
 
-%description devel -l pl
-Pakiet ten zawiera biblioteki i pliki nag³ówkowe dla programistów.
+%description devel -l pl.UTF-8
+Pakiet ten zawiera biblioteki i pliki nagÅ‚Ã³wkowe dla programistÃ³w.
 
-%description devel -l de
+%description devel -l de.UTF-8
 Dies ist ein Paket mit Entwicklungs-Libraries und Header-Dateien zum
 Schreiben von Programmen, die auf die termcap-Datenbank zugreifen.
-Eventuell müssen noch ein paar andere Pakete gebaut werden.
+Eventuell mÃ¼ssen noch ein paar andere Pakete gebaut werden.
 
-%description devel -l es
+%description devel -l es.UTF-8
 Este es el paquete que contiene las bibliotecas y archivos de
-inclusión para la escritura de programas que acceden al banco de datos
-termcap. Puede ser necesario también para construir otros paquetes.
+inclusiÃ³n para la escritura de programas que acceden al banco de datos
+termcap. Puede ser necesario tambiÃ©n para construir otros paquetes.
 
-%description devel -l fr
-Ceci est le package contenant les bibliothéques de développement et
-les fichiers d'en-tête pour écrire des programmes accédant à la base
-de données termcap. Cela peut être nécessaire pour construire certains
+%description devel -l fr.UTF-8
+Ceci est le package contenant les bibliothÃ©ques de dÃ©veloppement et
+les fichiers d'en-tÃªte pour Ã©crire des programmes accÃ©dant Ã  la base
+de donnÃ©es termcap. Cela peut Ãªtre nÃ©cessaire pour construire certains
 autres packages.
 
-%description devel -l pt_BR
-Este é o pacote que contém as bibliotecas e arquivos de inclusão para
+%description devel -l pt_BR.UTF-8
+Este Ã© o pacote que contÃ©m as bibliotecas e arquivos de inclusÃ£o para
 a escrita de programas que acessam o banco de dados termcap. Ele pode
-ser necessário para construir outros pacotes também.
+ser necessÃ¡rio para construir outros pacotes tambÃ©m.
 
-%description devel -l tr
-Bu paket, termcap veri tabanýný kullanan programlar geliþtirmek için
-gereken baþlýk dosyalarý ve kitaplýklarý içerir.
+%description devel -l tr.UTF-8
+Bu paket, termcap veri tabanÄ±nÄ± kullanan programlar geliÅŸtirmek iÃ§in
+gereken baÅŸlÄ±k dosyalarÄ± ve kitaplÄ±klarÄ± iÃ§erir.
 
 %package static
 Summary:	Static termcap library
-Summary(pl):	Statyczna Biblioteka termcap
-Summary(pt_BR):	Bibliotecas estáticas para desenvolvimento com termcap
+Summary(pl.UTF-8):   Statyczna Biblioteka termcap
+Summary(pt_BR.UTF-8):   Bibliotecas estÃ¡ticas para desenvolvimento com termcap
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static termcap library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka termcap.
 
-%description static -l pt_BR
-Bibliotecas estáticas para desenvolvimento com termcap
+%description static -l pt_BR.UTF-8
+Bibliotecas estÃ¡ticas para desenvolvimento com termcap
 
 %prep
 %setup -q -n termcap-%{version}
