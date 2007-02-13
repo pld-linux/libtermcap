@@ -1,10 +1,10 @@
 Summary:	Library for accessing the termcap database
-Summary(de.UTF-8):   Library zum Zugriff auf die termcap-Datenbank
-Summary(es.UTF-8):   Biblioteca para acceder a base de datos termcap
-Summary(fr.UTF-8):   Librairie pour accéder à la base de données termcap
-Summary(pl.UTF-8):   Biblioteki dostępu do bazy danych termcap
-Summary(pt_BR.UTF-8):   Biblioteca para acessar a base de dados termcap
-Summary(tr.UTF-8):   termcap veri tabanına erişim kitaplığı
+Summary(de.UTF-8):	Library zum Zugriff auf die termcap-Datenbank
+Summary(es.UTF-8):	Biblioteca para acceder a base de datos termcap
+Summary(fr.UTF-8):	Librairie pour accéder à la base de données termcap
+Summary(pl.UTF-8):	Biblioteki dostępu do bazy danych termcap
+Summary(pt_BR.UTF-8):	Biblioteca para acessar a base de dados termcap
+Summary(tr.UTF-8):	termcap veri tabanına erişim kitaplığı
 Name:		libtermcap
 Version:	2.0.8
 Release:	4
@@ -48,12 +48,12 @@ Bu paket termcap veri tabanına ulaşım kitaplığını içerir.
 
 %package devel
 Summary:	Development libraries and header files for termcap library
-Summary(de.UTF-8):   Entwicklungs-Libraries und Header-Dateien für die termcap-Library
-Summary(es.UTF-8):   Biblioteca para desarrollo y archivos de inclusión para biblioteca
-Summary(fr.UTF-8):   Librairies de développement et fichiers d'en-tête pour la termcap
-Summary(pl.UTF-8):   Biblioteki i pliki nagłówkowe dla termcap
-Summary(pt_BR.UTF-8):   Biblioteca para desenvolvimento e arquivos de inclusão para biblioteca termcap
-Summary(tr.UTF-8):   termcap kitaplığını kullanan geliştirmek için gerekli dosyalar
+Summary(de.UTF-8):	Entwicklungs-Libraries und Header-Dateien für die termcap-Library
+Summary(es.UTF-8):	Biblioteca para desarrollo y archivos de inclusión para biblioteca
+Summary(fr.UTF-8):	Librairies de développement et fichiers d'en-tête pour la termcap
+Summary(pl.UTF-8):	Biblioteki i pliki nagłówkowe dla termcap
+Summary(pt_BR.UTF-8):	Biblioteca para desenvolvimento e arquivos de inclusão para biblioteca termcap
+Summary(tr.UTF-8):	termcap kitaplığını kullanan geliştirmek için gerekli dosyalar
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %if "%{_includedir}" == "/usr/include"
@@ -95,8 +95,8 @@ gereken başlık dosyaları ve kitaplıkları içerir.
 
 %package static
 Summary:	Static termcap library
-Summary(pl.UTF-8):   Statyczna Biblioteka termcap
-Summary(pt_BR.UTF-8):   Bibliotecas estáticas para desenvolvimento com termcap
+Summary(pl.UTF-8):	Statyczna Biblioteka termcap
+Summary(pt_BR.UTF-8):	Bibliotecas estáticas para desenvolvimento com termcap
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
