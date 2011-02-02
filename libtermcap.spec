@@ -163,7 +163,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %attr(755,root,root) %{_libdir}/*.so
 %{_includedir}/*.h
-%{_infodir}/*
+%{_infodir}/*.info*
 
 %files static
 %defattr(644,root,root,755)
